@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'content='width=device-width, initial-scale=1.0,  shrink-to-fit=no, maximum-scale=1.0, user-scalable=0'>
+    <meta name="description" content="Page to Host DIY IOT Projects">
+    <meta name="author" content="Jared Thomas">
+
+    <title>I/O T.hings</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+    <script>
+        function windowClose() {
+        window.open('','_parent','');
+        window.close();
+        }
+    </script>
+  </head>
+  <body id="page-top">
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+
+        <!--Brand Title -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">I/O T.hings</a>
+
+        <!-- Navbar Toggler Button -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span><img class="icon" height="25" width="35 "src="img/icons/threelines.png" alt=""></button>
+
+        <!-- Nav Bar Links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#firsttime">Getting Started</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#oslist">download os</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#etcher_section">flash os</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#faqs">FAQS</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+          </ul>
+
+      </div>
+    </nav>
+
+    <!-- Header/Welcome Section -->
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto bg-faded rounded padding-tight margin-sm">
+        <div class="row">
+
+          <!-- Welcome Text -->
+          <div class="col-lg-10 mx-auto">
+            <hr class="light sr-button"></hr>
+            <h1 class="text-white text-uppercase sr-button drop-shadow">At Last</h1>
+            <hr class="light sr-button"></hr>
+          </div></div>
+
+          <!-- Welcome Subtext -->
+          <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p class="text-justify text-white mb-5 sr-button drop-shadow"> <em>Let me tell you why you're here. You're here because you know something. What you know you can't explain, but you feel it. You've felt it your entire life, that there's something wrong with the world. You don't know what it is, but it's there, like a splinter in your mind, driving you mad. It is this feeling that has brought you to me. Do you know what I'm talking about?</em> </p>
+            <a class="btn btn-primary btn-xl sr-button js-scroll-trigger" href="#intro">Next</a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Matrix Falling Rain Background -->
+    <section class="matrix">
+      <div class="container-fluid">
+        <canvas id="c-matrix">
+          <script>
+            // Matrix Rain Script, Credit:
+            // https://codepen.io/P3R0/pen/MwgoKv
+            var c = document.getElementById("c-matrix");
+            var ctx = c.getContext("2d");
+            c.height = window.innerHeight;
+            c.width = window.innerWidth;
+
+            var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
+            chinese = chinese.split("");
+            var font_size = 10;
+            var columns = c.width/font_size;
+            var drops = [];
+            for(var x = 0; x < columns; x++)
+            drops[x] = 1;
+            function draw()
+            {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.02)";
+            ctx.fillRect(0, 0, c.width, c.height);
+            ctx.fillStyle = "#0F0";
+            ctx.font = font_size + "px arial";
+            for(var i = 0; i < drops.length; i++)
+            {
+                var text = chinese[Math.floor(Math.random()*chinese.length)];
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+                if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+                drops[i]++;
+            }
+            }
+            setInterval(draw, 33);
+          </script>
+        </canvas>
+      </div>
+    </section>
+
+    <!-- Matrix Text Wrap -->
+    <a class="js-scroll-anchor-top" id="intro"></a>
+    <section class="wrap full-height text-center text-white d-flex">
+      <div class="container-fluid my-auto">
+        <div class="row">
+         <div class="col-lg-12 mx-auto text-center">
+           <a class="btn btn-black text-lowercase sr-button js-scroll-trigger" href="#choicetime">Hello friend</a>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Last Chance Subtext -->
+    <a class="js-scroll-anchor-top" id="choicetime"></a>
+    <section class="bg-dark full-height d-flex">
+     <div class="container-fluid  my-auto">
+      <div class="row padding-md">
+       <div class="col-lg-12 mx-auto text-justify text-white">
+        <hr class="mb-4 sr-icons dark"></hr>
+        <p class="sr-icons"> This is your last chance.</p>
+        <p class="sr-icons"> After this, there is no turning back.</p>
+        <p class="sr-icons">
+        You take the blue pill — The Story Ends:
+        You wake up in your bed and believe whatever you want to believe.</p>
+        <p class="sr-icons">
+        You take the red pill — You Stay in Wonderland:
+        And I show you how deep the rabbit hole goes.</p>
+        <hr class="mb-4 sr-icons dark"></hr>
+       </div>
+      </div>
+      <div class="row padding-vh">
+        <div class="col-xs-6 text-center mx-auto">
+         <a class="btn btn-danger btn-xl sr-button js-scroll-trigger" href="#firsttime">red</a>
+        </div>
+        <div class="col-xs-6 text-center mx-auto">
+         <a class="btn btn-info btn-xl sr-button js-scroll-trigger" href="#portfolio">blue</a>
+        </div>
+       </div>
+     </div>
+    </section>
+
+    <!-- "Getting Started" -->
+    <a class="js-scroll-anchor-top" id="firsttime"></a>
+    <section class="bg-light padding-sm">
+      <div class="container">
+       <div class="row">
+        <div class="col-lg-12">
+         <hr class="dark"></hr>
+         <h1 class="mb-4 text-black text-center">get started</h1>
+         <hr class="dark"></hr>
+         </div>
+       </div>
+      </div>
+    </section>
+    <section class="bg-light padding-none">
+     <div class="container">
+      <div class="row">
+         <div class="col-lg-6 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+           <i class="fa fa-4x fa-floppy-o text-primary text-center mb-3 sr-icons"></i>
+           <h2 class="text-center mb-3">hardware</h2>
+           <p class="text-justify mb-0">For any of the coming Raspberry Pi  Projects, you're going to need an SD Card. Not all SD Cards are created equal. Be sure to <a class="hyperlink" href="https://elinux.org/RPi_SD_cards#Working_.2F_Non-working_SD_cards" target="_blank">check this list.</a></p>
+          </div>
+         </div>
+         <div class="col-lg-6 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+           <i class="fa fa-4x fa-heart text-primary text-center mb-3 sr-icons"></i>
+           <h2 class="text-center mb-3">software</h2>
+           <p class="text-justify" >Unless otherwise specified, most Raspberry Pi Projects will use the Raspbian OS (Operating System). In the next section, I'll provide links to any needed files as well as how to install them.</p>
+          </div>
+         </div>
+       </div>
+     </div>
+    </section>
+    <section class="bg-light">
+     <div class="container">
+      <div class="row">
+       <div class="col-lg-12 text-center padding-auto text-white">
+        <p><a class="btn btn-primary btn-xl sr-button js-scroll-trigger" href="#oslist">Next</a></p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- "Download OS" -->
+    <a class="dark js-scroll-anchor-top" id="oslist"></a>
+    <section class="bg-dark full-height text-white d-flex">
+     <div class="container-fluid my-auto">
+      <div class="row">
+       <div class="col-lg-12 text-center mx-auto">
+        <hr class="dark sr-button"></hr>
+        <h1 class="mb-4 sr-button">Download OS</h1>
+        <hr class="dark sr-button"></hr>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-lg-12 text-center mx-auto">
+        <h1 class="mb-4"></h1>
+        <p><a class="btn btn-danger mb-12 btn-xl sr-button" href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" >Download Raspbian</a></p>
+        <p><a class="btn btn-info btn-xl sr-button" href="https://elinux.org/RPi_Distributions#Comparison" target="_blank" >Download Other OS</a></p>
+        <p><a class="btn btn-light btn-xl sr-button js-scroll-trigger" href="#etcher_section">Next</a></p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Etcher -->
+    <a class="js-scroll-anchor-top" id="etcher_section"></a>
+    <section class="bg-primary full-height padding-md d-flex">
+     <div class="container-fluid">
+      <div class="row">
+       <div class="col-lg-12 padding-none text-center text-white sr-button">
+        <hr class="primary"></hr>
+        <h2 class="mb-4">Flash OS to SD</h2>
+        <hr class="primary"></hr>
+       </div>
+      </div>
+      <div class="row">
+       <div class=" sr-button col-lg-12 mx-auto text-center">
+        <div class="portfolio">
+         <a class="portfolio-box" href="https://etcher.io/"></a>
+          <img class="img-fluid" src="img/portfolio/gif/etcher.gif" alt="">
+        </div>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-lg-12 padding-sm text-center text-white">
+        <p><a class="btn btn-dark btn-xl sr-button" href="https://etcher.io/" target="_blank"> Download Etcher</a></p>
+        <p><a class="btn btn-light btn-xl sr-button js-scroll-trigger" href="#portfolio">Next</a></p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Project -->
+    <a class="dark js-scroll-anchor-top" id="portfolio"></a>
+    <section class="bg-dark padding-sm">
+     <div class="container">
+      <div class="row">
+       <div class="col-lg-12 text-center text-white sr-button">
+
+        <hr class="dark"></hr>
+        <h2 class="mb-1">Choose a Project</h2>
+        <hr class="dark"></hr>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="p-0" >
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+
+          <div class="col-lg-3">
+            <a class="portfolio-box" href="img/portfolio/thumbnails/1.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.png" alt="">
+
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Raspberry Pi
+                  </div>
+                  <div class="project-name">
+                    RetroPie
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a class="portfolio-box" href="img/portfolio/thumbnails/2.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Raspberry Pi
+                  </div>
+                  <div class="project-name">
+                    MotionEye
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Raspberry Pi
+                  </div>
+                  <div class="project-name">
+                    Alexa
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a class="portfolio-box" href="img/portfolio/fullsize/4.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/4.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Raspberry Pi
+                  </div>
+                  <div class="project-name">
+                    Google Assistant
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Empty Project Templates/Arduino
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/5.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/5.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Arduino
+                  </div>
+                  <div class="project-name">
+                    Stranger Project
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/6.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/6.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Arduino
+                  </div>
+                  <div class="project-name">
+                    Project Uno
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="bg-primary padding-sm text-white text-center d-flex">
+      <div class="container my-auto">
+       <div class="row">
+        <div class="col-lg-12">
+         <p class="js-scroll-link" id="faqs"></p>
+         <hr class="light"></hr>
+         <h4 class="mb-1 text-center sr-button">Frequently Asked Questions</h4>
+         <hr class="light"></hr>
+         </div>
+       </div>
+      </div>
+    </section>
+    <section class="bg-primary padding-auto text-white text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p>There are no questions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+    <hr class="light js-scroll-link-top" id="contact"></hr>
+    <section class="bg-light padding-sm text-black text-center d-flex">
+      <div class="container-fluid">
+       <div class="row padding-sm">
+        <div class="col-lg-12 text-center">
+         <h1 class="text-center">Contact</h1>
+        </div>
+       </div>
+       <div class="row">
+         <div class="col-sm-6 mx-auto text-black text-justify">
+          <p>Ready to start your next project? </p>
+          <p>Videos are constantly being uploaded to YouTube.</p>
+          <p>Projects and pages like this are possible thanks to donations from patrons like you.</p>
+         </div>
+       </div>
+      </div>
+    </section>
+    <section class="bg-light padding-sm text-black text-center d-flex">
+     <div class="container">
+      <div class="row">
+
+        <div class="col-sm-4 ml-auto">
+          <a href="" target="_blank"><i class="fa fa-facebook fa-3x mb-3 sr-contact"></i></a>
+          <p><a class="hyperlink" href="" target="_blank">facebook.com/bitBytebit</a></p>
+        </div>
+
+        <div class="col-sm-4 ml-auto">
+          <a href="" target="_blank"><i class="fa fa-linkedin fa-3x mb-3 sr-contact"></i></a>
+          <p><a class="hyperlink"href="" target="_blank">linkedin.com/bitBytebit</a></p>
+        </div>
+
+        <div class="col-sm-4 ml-auto">
+          <a href="https://www.youtube.com/channel/UClbndUAAyFAGQO64RtGz8CA"><i class="fa fa-youtube fa-3x mb-3 sr-contact"></i></a>
+          <p><a class="hyperlink" href="https://www.youtube.com/channel/UClbndUAAyFAGQO64RtGz8CA" target="_blank">YouTube.com/bitBytebit<a/></p>
+        </div>
+
+      </div>
+     </div>
+    </section>
+
+    <!-- END Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+  </body>
+</html>
