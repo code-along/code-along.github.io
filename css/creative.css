@@ -41,13 +41,13 @@ h6 {
 
 p {
     color:inherit;
-    font-size: .8rem; }
+    font-size: 16px; }
     @media (min-width: 768px) {
     p {
-          font-size: 1rem;}}
+          font-size: .9rem;}}
     @media (min-width: 992px) {
     p {
-          font-size: 1.1rem;  }}
+          font-size: 1rem;  }}
 
 .drop-shadow {
   text-shadow: 1px 1px 4px black;
@@ -232,7 +232,6 @@ header.masthead {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #212121;
-  background-image: url("../img/stock.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -242,30 +241,28 @@ header.masthead {
     margin-top: 30px;
     margin-bottom: 30px; }
   header.masthead h1 {
-    font-size: 1.25rem; }
+    font-size: 1.4rem; }
   header.masthead p {
     font-weight: 300;
-    font-size: .75rem; }
+    font-size: 1rem; }
 
   @media (min-width: 768px) {
     header.masthead {
       min-height: 50%;
-      background-image: url("../img/stock.jpg");
       padding-top: 5rem;
       padding-bottom: 5rem; }
     header.masthead h1 {
-      font-size: 1.5rem; }
+      font-size: 1.4rem; }
     header.masthead p {
       font-size: 1rem; }}
 
   @media (min-width: 992px) {
     header.masthead {
-      min-height: 50%;
-      background-image: url("../img/stock.jpg"); }
+      min-height: 50%; }
     header.masthead h1 {
-      font-size: 3rem; }
+      font-size: 1.4rem; }
     header.masthead p {
-      font-size: 1.5rem; }}
+      font-size: 1rem; }}
 
 .service-box {
   max-width: 400px; }
